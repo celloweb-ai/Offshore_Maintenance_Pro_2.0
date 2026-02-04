@@ -1,3 +1,7 @@
+<div align="center">
+
+![Offshore Maintenance Pro 2.0 Banner](./images/github-header.png)
+
 # 🛢️ Offshore Maintenance Pro 2.0
 
 > Sistema Inteligente de Gestão de Manutenção para Instalações Offshore
@@ -6,6 +10,8 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.8-blue.svg)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-19.2-61dafb.svg)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-6.2-646cff.svg)](https://vitejs.dev/)
+
+</div>
 
 ## 📋 Índice
 
