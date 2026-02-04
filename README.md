@@ -11,12 +11,16 @@
 [![React](https://img.shields.io/badge/React-19.2-61dafb.svg)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-6.2-646cff.svg)](https://vitejs.dev/)
 [![Deploy with Vercel](https://img.shields.io/badge/Deploy-Vercel-000000?logo=vercel)](https://vercel.com/new/clone?repository-url=https://github.com/celloweb-ai/Offshore_Maintenance_Pro_2.0)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-00C7B7?logo=vercel&logoColor=white)](https://offshore-maintenance-pro-2-0.vercel.app/)
+
+### 🚀 [**Acesse a Aplicação ao Vivo**](https://offshore-maintenance-pro-2-0.vercel.app/)
 
 </div>
 
 ## 📋 Índice
 
 - [Visão Geral](#-visão-geral)
+- [Demo ao Vivo](#-demo-ao-vivo)
 - [Características Principais](#-características-principais)
 - [Arquitetura](#-arquitetura)
 - [Tecnologias Utilizadas](#-tecnologias-utilizadas)
@@ -40,6 +44,23 @@ O **Offshore Maintenance Pro 2.0** é uma aplicação web profissional desenvolv
 - Criação de Análises Preliminares de Risco (APR) conforme NR-37
 - Histórico técnico de manutenções realizadas
 - Exportação de documentos para PDF e Word
+
+## 🌐 Demo ao Vivo
+
+**🚀 Acesse a aplicação em produção:**
+
+### [https://offshore-maintenance-pro-2-0.vercel.app/](https://offshore-maintenance-pro-2-0.vercel.app/)
+
+A aplicação está hospedada no Vercel e totalmente funcional. Para testar:
+
+1. Acesse o link acima
+2. Selecione o tipo de manutenção (Preventiva ou Corretiva)
+3. Escolha o instrumento e preencha as informações
+4. Clique em "Gerar Plano de Manutenção"
+5. Aguarde 15-30 segundos para a IA processar
+6. Visualize, edite e exporte o plano gerado
+
+> 💡 **Dica**: A aplicação usa sua própria chave API configurada. Você pode gerar quantos planos precisar!
 
 ## ✨ Características Principais
 
@@ -156,7 +177,7 @@ Crie um arquivo `.env.local` na raiz do projeto:
 cp .env.example .env.local
 
 # Edite e adicione sua chave
-API_KEY=sua_chave_api_google_gemini_aqui
+GEMINI_API_KEY=sua_chave_api_google_gemini_aqui
 ```
 
 > ⚠️ **Importante**: Nunca commite o arquivo `.env.local` com chaves reais. O arquivo `.gitignore` já está configurado para ignorá-lo.
@@ -180,7 +201,7 @@ npm run dev
 yarn dev
 ```
 
-Acesse `http://localhost:5173` no navegador.
+Acesse `http://localhost:3000` no navegador.
 
 ### Build para Produção
 
@@ -215,9 +236,14 @@ yarn preview
 
 ### Deploy Rápido no Vercel
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/celloweb-ai/Offshore_Maintenance_Pro_2.0&env=API_KEY&envDescription=Google%20Gemini%20API%20Key&envLink=https://makersuite.google.com/app/apikey)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/celloweb-ai/Offshore_Maintenance_Pro_2.0&env=GEMINI_API_KEY&envDescription=Google%20Gemini%20API%20Key&envLink=https://makersuite.google.com/app/apikey)
 
 Clique no botão acima para fazer deploy em um clique!
+
+### Demo em Produção
+
+**Acesse a aplicação já deployada:**
+🔗 [https://offshore-maintenance-pro-2-0.vercel.app/](https://offshore-maintenance-pro-2-0.vercel.app/)
 
 ### Guia Completo de Deploy
 
@@ -335,4 +361,8 @@ Este projeto está licenciado sob a **MIT License** - veja o arquivo [LICENSE](L
   <strong>Desenvolvido com 💙 para engenheiros offshore</strong>
   <br>
   <sub>Offshore Maintenance Pro 2.0 - Transformando procedimentos técnicos com IA</sub>
+  <br><br>
+  <a href="https://offshore-maintenance-pro-2-0.vercel.app/">
+    <img src="https://img.shields.io/badge/🚀-Acesse_a_Demo_ao_Vivo-00C7B7?style=for-the-badge" alt="Demo ao Vivo">
+  </a>
 </div>
