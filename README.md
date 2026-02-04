@@ -10,6 +10,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.8-blue.svg)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-19.2-61dafb.svg)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-6.2-646cff.svg)](https://vitejs.dev/)
+[![Deploy with Vercel](https://img.shields.io/badge/Deploy-Vercel-000000?logo=vercel)](https://vercel.com/new/clone?repository-url=https://github.com/celloweb-ai/Offshore_Maintenance_Pro_2.0)
 
 </div>
 
@@ -22,6 +23,7 @@
 - [Instalação](#-instalação)
 - [Configuração](#-configuração)
 - [Uso](#-uso)
+- [Deploy](#-deploy)
 - [Estrutura do Projeto](#-estrutura-do-projeto)
 - [Contribuindo](#-contribuindo)
 - [Licença](#-licença)
@@ -149,7 +151,11 @@ yarn install
 
 Crie um arquivo `.env.local` na raiz do projeto:
 
-```env
+```bash
+# Copie o template
+cp .env.example .env.local
+
+# Edite e adicione sua chave
 API_KEY=sua_chave_api_google_gemini_aqui
 ```
 
@@ -205,6 +211,34 @@ yarn preview
 7. **Revise o Documento**: Visualize procedimentos, APR e especificações
 8. **Exporte**: Baixe em PDF ou Word
 
+## 🌐 Deploy
+
+### Deploy Rápido no Vercel
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/celloweb-ai/Offshore_Maintenance_Pro_2.0&env=API_KEY&envDescription=Google%20Gemini%20API%20Key&envLink=https://makersuite.google.com/app/apikey)
+
+Clique no botão acima para fazer deploy em um clique!
+
+### Guia Completo de Deploy
+
+Para instruções detalhadas de deploy, incluindo:
+
+- Configuração passo a passo
+- Variáveis de ambiente
+- Troubleshooting
+- Deploy via CLI
+- Monitoramento
+- Domínio customizado
+
+**Consulte o [Guia de Deploy Completo](DEPLOYMENT.md)**
+
+### Plataformas Suportadas
+
+- ✅ **Vercel** (Recomendado) - Deploy automático com GitHub
+- ✅ **Netlify** - Suporte nativo para Vite
+- ✅ **GitHub Pages** - Deploy estático
+- ✅ **Firebase Hosting** - Integração com Google Cloud
+
 ## 📁 Estrutura do Projeto
 
 ```
@@ -223,10 +257,14 @@ Offshore_Maintenance_Pro_2.0/
 ├── index.html              # Template HTML
 ├── index.css               # Estilos globais e TailwindCSS
 ├── vite.config.ts          # Configuração Vite
+├── vercel.json             # Configuração Vercel
 ├── tsconfig.json           # Configuração TypeScript
 ├── package.json            # Dependências e scripts
 ├── .gitignore              # Arquivos ignorados pelo Git
+├── .env.example            # Template de variáveis de ambiente
 ├── .env.local              # Variáveis de ambiente (não commitado)
+├── DEPLOYMENT.md           # Guia de deploy
+├── CONTRIBUTING.md         # Guia de contribuição
 └── README.md               # Documentação (este arquivo)
 ```
 
@@ -268,6 +306,8 @@ Contribuições são bem-vindas! Para contribuir:
 3. Commit suas mudanças (`git commit -m 'Adiciona nova funcionalidade'`)
 4. Push para a branch (`git push origin feature/NovaFuncionalidade`)
 5. Abra um Pull Request
+
+Para diretrizes detalhadas, consulte [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ### Diretrizes de Código
 
