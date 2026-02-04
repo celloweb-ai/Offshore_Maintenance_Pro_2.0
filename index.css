@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+/* Estilos de utilitários customizados para o contexto offshore */
+@layer components {
+  .tech-card {
+    @apply bg-white rounded-xl shadow-sm border border-slate-200 p-6 transition-all hover:shadow-md;
+  }
+}
+
+/* Configurações específicas de impressão para conformidade com documentos técnicos A4 */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 1cm; /* Margens mínimas para aproveitar espaço em A4 */
+  }
+  
+  body { 
+    background: white !important; 
+    color: black !important;
+    font-size: 10pt; /* Aumentado para melhor legibilidade no papel */
+    line-height: 1.4;
+  }
+
+  .no-print { display: none !important; }
+  .print-only { display: block !important; }
+  
+  /* Controle de Fluxo de Página */
+  .print-avoid-break {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+  
+  .print-break-before {
+    break-before: page !important;
+    page-break-before: always !important;
+  }
+
+  /* Reset de sombras e bordas para o PDF não ficar com artefatos visuais */
+  .shadow-md, .shadow-lg, .shadow-xl, .shadow-inner, .shadow-sm {
+    box-shadow: none !important;
+  }
+
+  /* Forçar fidelidade de cores em backgrounds escuros e alertas */
+  .bg-slate-900, .bg-orange-700, .bg-slate-50, .bg-red-50, .bg-blue-50 { 
+    -webkit-print-color-adjust: exact !important; 
+    print-color-adjust: exact !important;
+  }
+  
+  .border-orange-600 { border-color: #ea580c !important; }
+  .border-slate-900 { border-color: #0f172a !important; }
+
+  /* Tabelas Técnicas */
+  table { 
+    width: 100% !important; 
+    border-collapse: collapse !important;
+    margin-bottom: 15pt !important;
+  }
+  th, td { 
+    border: 0.5pt solid #e2e8f0 !important; 
+    padding: 8pt !important;
+  }
+  
+  th { background-color: #f1f5f9 !important; }
+
+  textarea, input { 
+    border: none !important;
+    background: transparent !important;
+    padding: 2pt 0 !important;
+  }
+
+  /* Assinaturas Digitais */
+  canvas { display: none !important; } /* Ocultar canvas vazio na impressão */
+  img { max-width: 100% !important; }
+}
