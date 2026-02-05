@@ -13,15 +13,14 @@
 [![Deploy with Vercel](https://img.shields.io/badge/Deploy-Vercel-000000?logo=vercel)](https://vercel.com/new/clone?repository-url=https://github.com/celloweb-ai/Offshore_Maintenance_Pro_2.0)
 [![Live Demo](https://img.shields.io/badge/Live-Demo-00C7B7?logo=vercel&logoColor=white)](https://offshore-maintenance-pro-2-0.vercel.app/)
 
-## 🚨 AVISO IMPORTANTE - FASE DE TESTES
+## 🚨 FASE DE TESTES - IMPORTANTE
 
-**Deployment Vercel desativado temporariamente** devido aos custos de uso da API Google Gemini durante desenvolvimento e testes.
+⚠️ **Deployment Vercel desabilitado** por custos da API Google Gemini (desenvolvimento em andamento).
 
-### 🔗 Alternativa Recomendada:
-🌐 **[ACESSAR APLICAÇÃO AO VIVO no Google AI Studio]**  
-(https://aistudio.google.com/apps/drive/1pPFCP9g2SZIEdUkjKlRUKCj7-WkQiV7E?showPreview=true&showAssistant=true&fullscreenApplet=true)
+**✅ Acesse aqui:**
+🌐 [ACESSAR APLICAÇÃO AO VIVO](https://aistudio.google.com/apps/drive/1pPFCP9g2SZIEdUkjKlRUKCj7-WkQiV7E?showPreview=true&showAssistant=true&fullscreenApplet=true)
 
-**Status atual:** 🧪 Em testes | Funcionalidades em otimização | Retorno ao Vercel previsto pós-estabilização.
+**Status:** 🧪 Testes ativos | Otimização em progresso | Vercel volta pós-estabilização.
 
 </div>
 
